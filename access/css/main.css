@@ -79,46 +79,6 @@
   padding: 8px;
 }
 
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  min-width: 375px;
-  max-width: 1440px;
-  background-color: #eee;
-  font-family: 'Rubik', sans-serif;
-}
-
-h2 {
-  color: var(--veryDarkBlue);
-  text-align: center;
-  font-size: 1.8em;
-}
-
-p {
-  padding: 10px;
-  color: var(--grayishBlue);
-  text-align: center;
-  margin: 25px auto;
-}
-
-.container {
-  width: 90%;
-  margin: auto;
-}
-
-.hero {
-  text-align: center;
-  padding-top: 60px;
-}
-
-.hero img {
-  margin-top: 40px;
-  display: block;
-  width: 100%;
-}
-
 .container-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,5 +111,89 @@ p {
 .btn-success {
   background: var(--softBlue);
   color: white;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  min-width: 375px;
+  max-width: 1440px;
+  background-color: #eee;
+  font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+  color: var(--veryDarkBlue);
+  text-align: center;
+  font-size: 1.8em;
+}
+
+h3 {
+  margin-top: 150px;
+  color: var(--veryDarkBlue);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+p {
+  padding: 10px;
+  color: var(--grayishBlue);
+  text-align: center;
+  margin: 25px auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.hero img {
+  margin-top: 40px;
+  display: block;
+  width: 100%;
+}
+
+.feactures-ul {
+  font-weight: 500;
+  padding: 0;
+  text-align: center;
+}
+
+.feactures-ul .feacture {
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid var(--grayishBlue);
+  list-style: none;
+  padding: 18px;
+}
+
+.feactures-ul .feacture:last-child {
+  border-bottom: 1px solid var(--grayishBlue);
+}
+
+.feactures-ul .feacture a {
+  text-decoration: none;
+  color: var(--grayishBlue);
+}
+
+.feactures-ul .active {
+  color: var(--veryDarkBlue);
+}
+
+.feactures-ul .active::after {
+  content: "";
+  display: block;
+  width: 52%;
+  position: relative;
+  top: 20px;
+  left: 65px;
+  border-bottom: 3px solid rgba(255, 0, 0, 0.7);
 }
 /*# sourceMappingURL=main.css.map */
