@@ -31,4 +31,11 @@
   background: var(--softBlue);
   color: white;
 }
+
+.btn-success-short {
+  width: 100px;
+  padding: .9em;
+  display: block;
+  margin: auto;
+}
 /*# sourceMappingURL=btn.css.map */

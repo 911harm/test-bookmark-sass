@@ -45,6 +45,10 @@ p{
         display: block;
         width: 100%;
     }
+    #short{
+        width: 80%;
+        margin:auto;
+    }
 }
 
 .feactures-ul{
@@ -65,17 +69,53 @@ p{
             color:var(--grayishBlue);
         }
     }
-    .active{
-        color:var(--veryDarkBlue);
-        &::after{
-            content: "";
-            display: block;
-            width:52%;
-            position:relative;
-            top:20px;
-            left:65px;
-            border-bottom: 3px solid rgba(255,0,0,0.7);
+}
+.active{
+    color:var(--veryDarkBlue);
+    &::after{
+        content: "";
+        display: block;
+        width:52%;
+        max-width: 143px;
+        position: relative;
+        top:20px;
+        left:0px;
+        transform: translate(50%);
+        // ! movile good ! but for desktop :(
+        border-bottom: 3px solid rgba(255,0,0,0.7);
 
+    }
+}
+.tab{
+    display: none;
+}
+
+.tabs{
+    input{
+        display: none;
+    }
+    input[id="bookmarking"]:checked{
+        & ~ #tab-1{
+            display: block;
+        }
+        & ~ ul #t1{
+            @extend .active; 
+        }
+    }
+    input[id="searching"]:checked{
+        & ~ #tab-2{
+            display: block;
+        }
+        & ~ ul #t2{
+            @extend .active; 
+        }
+    }
+    input[id="sharing"]:checked{
+        & ~ #tab-3{
+            display: block;
+        }
+        & ~ ul #t3{
+            @extend .active; 
         }
     }
 }
