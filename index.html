@@ -9,8 +9,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link href="/access/css/main.css" rel="stylesheet">
 
-  <title>Frontend Mentor | Bookmark landing page</title>
+  <title>91harm|FM| Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -26,21 +27,64 @@
 </head>
 
 <body>
+  <div class="container">
 
-  Features
-  Pricing
-  Contact
-  Login
+    <header class="header" id="header">
+      <div class="logo" id="logo">
+        <img id="logo-img" src="./access/images/logo-bookmark.svg" alt="logo">
+      </div>
+      <div class="menu">
 
-  A Simple Bookmark Manager
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu-show">
+        <img id="close" src="./access/images/icon-hamburger.svg" alt="menu">
+      </div>
+    </header>
+  </div>
 
-  A clean and simple interface to organize your favourite websites. Open a new
-  browser tab and see your sites load instantly. Try it for free.
+  <div class="container">
+    <div class="hero">
+      <img src="./access//images/illustration-hero.svg" alt="bookmarks">
+    </div>
+  </div>
+  <div class="container">
+    <h2>
+      A Simple Bookmark </br> 
+      Manager
+    </h2>
+    <p>
+      A clean and simple interface to organize your favourite websites. Open a new
+      browser tab and see your sites load instantly. Try it for free.
+    </p>
 
-  Get it on Chrome
-  Get it on Firefox
+    <div class="container container-btn">
+      <button class="btn btn-success">Get it on Chrome</button>
+      <button class="btn">Get it on Firefox</button>
+    </div>
+  </div>
 
-  Features
+  <div class="container">
+    <h2>
+      Features
+    </h2>
+  </div>
+
 
   Our aim is to make it quick and easy for you to access your favourite websites.
   Your bookmarks sync between your devices so you can access them on the go.
@@ -141,6 +185,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="./main.js"></script>
 </body>
 
 </html>
