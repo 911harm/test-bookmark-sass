@@ -1,0 +1,60 @@
+.feactures-ul {
+  font-weight: 500;
+  padding: 0;
+  text-align: center;
+}
+
+.feactures-ul .feacture {
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid var(--grayishBlue);
+  list-style: none;
+  padding: 18px;
+}
+
+.feactures-ul .feacture:last-child {
+  border-bottom: 1px solid var(--grayishBlue);
+}
+
+.feactures-ul .feacture a {
+  text-decoration: none;
+  color: var(--grayishBlue);
+}
+
+.active, .tabs input[id="bookmarking"]:checked ~ ul #t1, .tabs input[id="searching"]:checked ~ ul #t2, .tabs input[id="sharing"]:checked ~ ul #t3 {
+  color: var(--veryDarkBlue);
+}
+
+.active::after, .tabs input[id="bookmarking"]:checked ~ ul #t1::after, .tabs input[id="searching"]:checked ~ ul #t2::after, .tabs input[id="sharing"]:checked ~ ul #t3::after {
+  content: "";
+  display: block;
+  width: 52%;
+  max-width: 143px;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  border-bottom: 3px solid rgba(255, 0, 0, 0.7);
+}
+
+.tab {
+  display: none;
+}
+
+.tabs input {
+  display: none;
+}
+
+.tabs input[id="bookmarking"]:checked ~ #tab-1 {
+  display: block;
+}
+
+.tabs input[id="searching"]:checked ~ #tab-2 {
+  display: block;
+}
+
+.tabs input[id="sharing"]:checked ~ #tab-3 {
+  display: block;
+}
+/*# sourceMappingURL=feactures.css.map */
