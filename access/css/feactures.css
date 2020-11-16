@@ -35,7 +35,7 @@
   left: 0px;
   -webkit-transform: translate(50%);
           transform: translate(50%);
-  border-bottom: 3px solid rgba(255, 0, 0, 0.7);
+  border-bottom: 3px solid var(--softRed);
 }
 
 .tab {

@@ -2,6 +2,7 @@
 .questions{
     margin:20px;
     .question-header{
+        outline: 0;
         padding: 1.5em 0;
         border-bottom: 1px solid var(--grayishBlue);
         font-size: 0.9em;
