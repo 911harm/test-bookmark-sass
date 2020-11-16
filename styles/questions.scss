@@ -1,0 +1,19 @@
+//questions
+.questions{
+    margin:20px;
+    .question-header{
+        padding: 1.5em 0;
+        border-bottom: 1px solid var(--grayishBlue);
+        font-size: 0.9em;
+        &::-webkit-details-marker{
+            background-image: url("./access/images/icon-arrow.svg");
+            color:var(--softBlue);
+            float: right;
+        }
+    }
+    .question-contain{
+        padding: 1.5em 0;
+        font-size: 0.9em;
+    }
+
+}

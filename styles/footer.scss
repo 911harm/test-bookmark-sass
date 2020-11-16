@@ -1,0 +1,30 @@
+//footer
+.footer{
+    background: var(--veryDarkBlue);
+    text-align: center;
+    padding: 3em 0;
+    color:white;
+    img{
+        margin-bottom: 2em;
+    }
+    ul{
+        list-style:none;
+        padding:0;
+        margin: 0;
+        li{
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 1em;
+            color: var(--lightGRay);
+        }
+    }
+    .social{
+        margin-top: 2em;
+        a{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+        }
+    }
+}

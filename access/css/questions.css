@@ -1,0 +1,21 @@
+.questions {
+  margin: 20px;
+}
+
+.questions .question-header {
+  padding: 1.5em 0;
+  border-bottom: 1px solid var(--grayishBlue);
+  font-size: 0.9em;
+}
+
+.questions .question-header::-webkit-details-marker {
+  background-image: url("./access/images/icon-arrow.svg");
+  color: var(--softBlue);
+  float: right;
+}
+
+.questions .question-contain {
+  padding: 1.5em 0;
+  font-size: 0.9em;
+}
+/*# sourceMappingURL=questions.css.map */

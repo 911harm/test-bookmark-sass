@@ -7,13 +7,16 @@
 @import './styles/header.scss';
 @import './styles/btn.scss';
 @import './styles/feactures.scss';
+@import './styles/questions.scss';
+@import './styles/contact.scss';
+@import './styles/footer.scss';
 body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     min-width: 375px;
     max-width: 1440px;
-    background-color: #eee;
+    // background-color: #eee;
     font-family: 'Rubik', sans-serif;
 }
 h2{
@@ -22,10 +25,12 @@ h2{
     font-size: 1.8em;
 }
 h3{
-    margin-top: 150px;
     color:var(--veryDarkBlue);
     text-align:center;
     font-size: 1.5em;
+}
+.p-9{
+    margin-top: 9em;
 }
 p{
     padding: 10px;
@@ -51,4 +56,20 @@ p{
         margin:auto;
     }
 }
+//browser
 
+.browser{
+width: 80%;
+margin-top: 20px;
+padding-top: 20px;
+background-image: url("./access/images/bg-dots.svg");
+background:url(../images/bg-dots.svg) repeat-x center bottom 80px;
+border-radius: 1em;
+padding-bottom: 20px;
+box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
+    .browser-img{
+        display:block;
+        width: 30%;
+        margin: auto;
+    }
+}
