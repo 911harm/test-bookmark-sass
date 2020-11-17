@@ -10,7 +10,6 @@
 }
 
 .questions .question-header::-webkit-details-marker {
-  background-image: url("./access/images/icon-arrow.svg");
   color: var(--softBlue);
   float: right;
 }

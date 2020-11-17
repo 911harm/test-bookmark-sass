@@ -61,3 +61,71 @@
         padding: 8px;
     }
 }
+@media screen and (min-width:1024px){
+    .header{
+        box-sizing: border-box;
+        height: 70px;
+        .logo{
+            margin-left: 40px;
+        }
+        .menu-show{
+            display:none !important;
+        }
+        .menu{
+            background:none;
+            display:flex !important;
+            position:static;
+            z-index: 2;
+            justify-content: flex-end;
+            
+            ul{
+                // justify-content: flex-end;
+                gap: 25px;
+                color:black;
+                display: flex;
+                letter-spacing: 1.2px;
+                li{
+                    display: inline-block;
+                    text-align:start;
+                    &:nth-child(3){
+                        a{border-bottom: none}
+                    }
+                    &:last-child{
+                        margin-top: 0px;
+                        margin-left: 20px;
+                        padding: 0px 5px;
+                        border-radius: 5px;
+                        &:hover{
+                            border-bottom:none;
+
+                        }
+                        a{
+                            background: var(--softRed);
+                            color:white;
+                            &:hover{
+                                color:var(--softRed);
+                                background:white;
+                                border:1px solid var(--veryDarkBlue);
+                                
+                            }
+                        }
+                       
+                    }
+                    a{  margin:0px;
+                        margin-left: 10px;
+                        border-radius: none;
+                        padding: 10px;
+                        border-top:none;
+                        width: auto;
+                        color: var(--veryDarkBlue);
+                       
+                    }
+                    &:hover{
+                        border-bottom:1px solid var(--veryDarkBlue);
+                    }
+                }
+                
+            }
+        }
+    }
+}
