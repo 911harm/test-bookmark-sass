@@ -7,6 +7,7 @@
 @import './styles/header.scss';
 @import './styles/btn.scss';
 @import './styles/feactures.scss';
+@import './styles/browser.scss';
 @import './styles/questions.scss';
 @import './styles/contact.scss';
 @import './styles/footer.scss';
@@ -56,25 +57,14 @@ p{
         margin:auto;
     }
 }
-//browser
-.browser{
-width: 80%;
-margin-top: 20px;
-padding-top: 20px;
-background-image: url("./access/images/bg-dots.svg");
-background:url(../images/bg-dots.svg) repeat-x center bottom 80px;
-border-radius: 1em;
-padding-bottom: 20px;
-box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
-    .browser-img{
-        display:block;
-        width: 30%;
-        margin: auto;
-    }
-}
+
+
  @media screen and (min-width:1024px){
      .p-9{
         margin-top: 30px;
+        &-1{
+            margin-top:100px;
+        }
      }
      p{
          max-width: 500px;

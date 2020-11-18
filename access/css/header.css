@@ -74,17 +74,23 @@
 
 @media screen and (min-width: 1024px) {
   .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 70px;
   }
   .header .logo {
-    margin-left: 40px;
+    margin-left: 0px;
   }
   .header .menu-show {
     display: none !important;
   }
   .header .menu {
+    max-width: 40%;
     background: none;
     display: -webkit-box !important;
     display: -ms-flexbox !important;

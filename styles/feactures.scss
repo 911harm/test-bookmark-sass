@@ -88,9 +88,16 @@
          .tab{
             flex-direction: row;
             &-info{
-            justify-content: center;
-            align-self: center;
-            width:400px;
+                justify-content: center;
+                align-self: center;
+                width:400px;
+                h3,p{
+                    text-align: initial;
+                }
+                button{
+                    margin: 0;
+                }
+                
             }
              .hero{
                  width: 45%;

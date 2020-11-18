@@ -18,4 +18,10 @@
   padding: 1.5em 0;
   font-size: 0.9em;
 }
+
+@media screen and (min-width: 1024px) {
+  .questions {
+    max-width: 500px;
+  }
+}
 /*# sourceMappingURL=questions.css.map */

@@ -100,6 +100,12 @@
         align-self: center;
     width: 400px;
   }
+  .tabs .tab-info h3, .tabs .tab-info p {
+    text-align: initial;
+  }
+  .tabs .tab-info button {
+    margin: 0;
+  }
   .tabs .tab .hero {
     width: 45%;
     margin: 0;
