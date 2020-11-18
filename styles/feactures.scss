@@ -35,6 +35,7 @@
 }
 .tab{
     display: none;
+    flex-direction: column;
 }
 
 .tabs{
@@ -43,7 +44,7 @@
     }
     input[id="bookmarking"]:checked{
         & ~ #tab-1{
-            display: block;
+            display: flex ;
         }
         & ~ ul #t1{
             @extend .active; 
@@ -51,7 +52,7 @@
     }
     input[id="searching"]:checked{
         & ~ #tab-2{
-            display: block;
+            display: flex ;
         }
         & ~ ul #t2{
             @extend .active; 
@@ -59,10 +60,44 @@
     }
     input[id="sharing"]:checked{
         & ~ #tab-3{
-            display: block;
+            display: flex;
         }
         & ~ ul #t3{
             @extend .active; 
         }
     }
+}
+@media screen and (min-width:1024px){
+    .feactures-ul{
+        display: flex;
+        
+        justify-content: center;
+        gap: 0px;
+        .feacture{
+            min-width: 170px;
+            border-bottom: 1px solid var(--grayishBlue);
+            border-top:none;
+            width: auto;
+            margin:0;
+        }
+     }
+     .tabs{
+         //
+        
+         //
+         .tab{
+            flex-direction: row;
+            &-info{
+            justify-content: center;
+            align-self: center;
+            width:400px;
+            }
+             .hero{
+                 width: 45%;
+                 margin:0;
+                 margin-left:120px;
+
+             }
+         }
+     }
 }

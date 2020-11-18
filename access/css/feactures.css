@@ -40,6 +40,10 @@
 
 .tab {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .tabs input {
@@ -47,14 +51,59 @@
 }
 
 .tabs input[id="bookmarking"]:checked ~ #tab-1 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tabs input[id="searching"]:checked ~ #tab-2 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tabs input[id="sharing"]:checked ~ #tab-3 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .feactures-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0px;
+  }
+  .feactures-ul .feacture {
+    min-width: 170px;
+    border-bottom: 1px solid var(--grayishBlue);
+    border-top: none;
+    width: auto;
+    margin: 0;
+  }
+  .tabs .tab {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tabs .tab-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 400px;
+  }
+  .tabs .tab .hero {
+    width: 45%;
+    margin: 0;
+    margin-left: 120px;
+  }
 }
 /*# sourceMappingURL=feactures.css.map */
