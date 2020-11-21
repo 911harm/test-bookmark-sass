@@ -3,6 +3,7 @@
     --softBlue: hsl(231, 69%, 60%);
     --softRed: hsl(0, 94%, 66%);
     --grayishBlue: hsl(229, 8%, 60%);
+    margin:0 auto;
 }
 @import './styles/header.scss';
 @import './styles/btn.scss';
@@ -17,6 +18,7 @@ body{
     margin: 0;
     min-width: 375px;
     max-width: 1440px;
+    
     // background-color: #eee;
     font-family: 'Rubik', sans-serif;
 }

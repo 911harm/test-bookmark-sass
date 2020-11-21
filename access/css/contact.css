@@ -20,12 +20,23 @@
 .input-email {
   width: 100%;
   padding: 1em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-bottom: 1em;
   border-radius: 10px;
   border: none;
   font-size: 1em;
   outline: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact .container {
+    width: 500px;
+  }
+  .contact .container .input-email {
+    width: 60%;
+  }
+  .contact .container button {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

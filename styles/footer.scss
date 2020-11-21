@@ -28,3 +28,26 @@
         }
     }
 }
+@media screen and (min-width:1024px){
+    .footer{
+        padding:0;
+        align-items: center;
+        display:flex;
+        justify-content: space-around;
+        .container{
+            display: flex;
+            max-width: 500px;
+            margin: 0;
+            ul{
+                display:flex;
+            }
+            img{
+                margin-bottom: 0px;
+                height: 30px;
+                margin-right: 20px;
+                height: 25px;
+                padding-top: 13px;
+            }
+        }
+    }    
+}
